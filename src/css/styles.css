@@ -28,23 +28,28 @@ body {
     overflow: hidden;
 }
 
-.container {
-    padding: 0 20px;
-    margin: 0 auto;
-    max-width: 375px;
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
-
-}
-
-@media screen and (min-width: 1280px) {
-    .container {
-        width: 1392px;
-        padding: 0 24px;
-    }
+.container { 
+    width: 100%; 
+    padding: 0 20px; 
+} 
+ 
+@media screen and (min-width: 375px) { 
+    .container { 
+        width: 375px; 
+        margin: 0 auto; 
+    } 
+} 
+ 
+@media screen and (min-width: 768px) { 
+    .container { 
+        width: 768px;
+        padding: 0 32px; 
+    } 
+} 
+ 
+@media screen and (min-width: 1440px) { 
+    .container { 
+        width: 1392px; 
+        padding: 0 24px; 
+    } 
 }
