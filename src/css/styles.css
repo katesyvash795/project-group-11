@@ -1,4 +1,5 @@
 @import url(./font-face.css);
+@import url(./scroll-up.css);
 
 :root {
     --White: rgba(255, 255, 255, 1);
@@ -28,28 +29,28 @@ body {
     overflow: hidden;
 }
 
-.container { 
-    width: 100%; 
-    padding: 0 20px; 
-} 
- 
-@media screen and (min-width: 375px) { 
-    .container { 
-        width: 375px; 
-        margin: 0 auto; 
-    } 
-} 
- 
-@media screen and (min-width: 768px) { 
-    .container { 
+.container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 375px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
         width: 768px;
-        padding: 0 32px; 
-    } 
-} 
- 
-@media screen and (min-width: 1440px) { 
-    .container { 
-        width: 1392px; 
-        padding: 0 24px; 
-    } 
+        padding: 0 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1392px;
+        padding: 0 24px;
+    }
 }

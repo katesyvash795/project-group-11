@@ -1,0 +1,18 @@
+.scroll-up-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    display: none;
+
+    padding: 10px 20px;
+    background-color: rgba(79, 46, 232, 0.6);
+    color: #fff;
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+}
+
+.scroll-up-btn:hover,
+.scroll-up-btn:hover {
+    background-color: rgba(79, 46, 232, 1);
+}
