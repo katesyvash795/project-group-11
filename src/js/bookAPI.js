@@ -2,8 +2,8 @@
 
 const BASE_URL = 'https://books-backend.p.goit.global';
 const CATEGOTY_LIST_WAY = '/books/category-list';
-const TOPBOOKS_WAY = '/books/top-books'
-const CATEGORY_WAY = '/books/category';;
+const TOPBOOKS_WAY = '/books/top-books';
+const CATEGORY_WAY = '/books/category';
 const BYIDWAY = '/books/';
 
 
