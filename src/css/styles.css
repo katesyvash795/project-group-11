@@ -1,0 +1,55 @@
+@import url(./font-face.css);
+
+:root {
+    --White: rgba(255, 255, 255, 1);
+    --Yellow: rgba(234, 198, 69, 1);
+    --Blue: rgba(79, 46, 232, 1);
+    --Black: rgba(32, 32, 36, 1);
+    --Darker: rgba(17, 17, 17, 1);
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans',
+        sans-serif;
+    color: var(--White);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container { 
+    width: 100%; 
+    padding: 0 20px; 
+} 
+ 
+@media screen and (min-width: 375px) { 
+    .container { 
+        width: 375px; 
+        margin: 0 auto; 
+    } 
+} 
+ 
+@media screen and (min-width: 768px) { 
+    .container { 
+        width: 768px;
+        padding: 0 32px; 
+    } 
+} 
+ 
+@media screen and (min-width: 1440px) { 
+    .container { 
+        width: 1392px; 
+        padding: 0 24px; 
+    } 
+}
