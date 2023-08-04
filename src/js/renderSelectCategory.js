@@ -30,7 +30,6 @@ function getMarkCategory(array) {
         <p class="category-item-author">${book.author}</p>
         </li>`
     }).join("");
-    console.log("hi");
     return title + `<ul class="category-list">${elements}</ul>`;
 }
 
