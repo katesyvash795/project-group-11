@@ -12,7 +12,11 @@ body {
     margin: 0;
     font-family: 'DM Sans',
         sans-serif;
-    color: var(--White);
+    background-color: var(--White);
+    color: var(--Darker);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
 }
 
 .visually-hidden {
@@ -49,7 +53,7 @@ body {
  
 @media screen and (min-width: 1440px) { 
     .container { 
-        width: 1392px; 
+        width: 1440px; 
         padding: 0 24px; 
     } 
 }
