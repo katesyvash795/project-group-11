@@ -1,0 +1,26 @@
+.books-btn {
+  display: block;
+  margin-left: auto;
+  padding: 14px 28px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  color: --Darker;
+  background-color: transparent;
+  border: 2px solid --Blue;
+  border-radius: 40px;
+
+  /* transition-property: background-color, color;
+  transition-duration: 
+  transition-timing-function: */
+
+  &:hover,
+  &:focus {
+    background-color: --Blue;
+    color: color-mix(in srgb, color percentage, color percentage)
+  }
+}
