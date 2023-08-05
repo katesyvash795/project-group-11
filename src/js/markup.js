@@ -1,5 +1,6 @@
 import { getBestBooks} from './bookAPI';
 import "../css/renderSelectCategory.css";
+import "../css/homePage.css";
 
 const homeContainer = document.querySelector(`.category-list-cont`);
 
