@@ -1,5 +1,52 @@
 <header class="header container">
     <div class="header-box">
+        <nav class="nav-box">
+            <a class="header-logo  link" href="./index.html" rel="noopener noreferrer nofollow" class="logo">
+                <img class="logo-svg" src="./images/header/logo.svg" alt="logo" />
+                <svg class="logo-text" width="77" height="28">
+                    <use class="bookshelf" href="./images/icons-header.svg#Bookshelf"></use>
+                </svg>
+            </a>
+            <ul class="list nav-box-list mobile-nav">
+                <li><a class="nav-list-item link home-link" href="./index.html">HOME</a></li>
+                <li><a class="nav-list-item link shopping-list" href="">SHOPPING LIST</a></li>
+            </ul>
+            <div class="mobile-panel">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button >
+                    <svg width="28" height="28" aria-label="Mobile menu button">
+                        <use class="icon-cross" href="./images/icons-header.svg#x-close"></use>
+                        <use class="icon-menu" href="./images/icons-header.svg#align-left"></use>
+                    </svg>
+                </button>
+            </div>
+            <button class="signup-button mobile-signup" type="button">Sign up
+                <svg class="arrow-right-icon" width="20" height="20">
+                    <use href="./images/icons-header.svg#arrow-right"></use>
+                </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+                <button class="signup-button" type="button">Sign up
+                    <svg class="arrow-right-icon" width="20" height="20">
+                        <use href="./images/icons-header.svg#arrow-right"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu">
+                    <ul class="list nav-box-list">
+                        <li><a class="nav-list-item link home-link-menu" href="./index.html">HOME</a></li>
+                        <li><a class="nav-list-item link shopping-list-menu" href="">SHOPPING LIST</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+    
+<!-- <header class="header container">
+    <div class="header-box">
         <div class="header-nav">
             <a class="header-logo  link" href="./index.html" rel="noopener noreferrer nofollow" class="logo">
                 <img class="logo-svg" src="./images/header/logo.svg" alt="logo" />
@@ -28,12 +75,12 @@
                 </svg>
             </button>
         </div>
-        <button class="signup-button" type="button">Sign up
+        <nav class="menu-nav">
+            <button class="signup-button" type="button">Sign up
             <svg class="arrow-right-icon" width="20" height="20">
                 <use href="./images/icons-header.svg#arrow-right"></use>
             </svg>
-        </button>
-        <nav class="menu-nav">
+            </button>
             <ul class="nav-list list">
                 <li class="nav-item">
                     <a class="home-link link" href="./index.html">Home</a>
@@ -44,4 +91,4 @@
             </ul>
         </nav>
     </div>
-</header>
+</header> -->

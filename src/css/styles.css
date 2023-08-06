@@ -6,7 +6,7 @@
 :root {
     --White: rgba(255, 255, 255, 1);
     --Yellow: rgba(234, 198, 69, 1);
-    --Blue: rgba(79, 46, 232, 1);
+    --Blue: #4f2ee8;
     --Black: rgba(32, 32, 36, 1);
     --Darker: rgba(17, 17, 17, 1);
 }
