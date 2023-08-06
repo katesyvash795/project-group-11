@@ -29,12 +29,16 @@
     display: none;
 }
 
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header-logo {
     display: flex;
     width: 109px;
     align-items: center;
     gap: 8px;
-    margin-right: 144px;
 }
 
 .logo-svg {
@@ -43,13 +47,19 @@
 }
 
 .logo-text {
-    color: #111;
-    font-family: DM Sans;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: -1px;
+    fill: #000000;
+}
+
+.bookshelf {
+    width: 82px;
+    height: 17px;
+}
+
+.mobile-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
 }
 
 /*Switcher  */
@@ -107,10 +117,8 @@ input:checked+.slider:before {
 
 /*Switcher  */
 
-
-
 .burger-icon {
-    fill: #000;
+    stroke: rgb(1, 1, 1);
 }
 
 .header-nav {
@@ -120,8 +128,14 @@ input:checked+.slider:before {
 }
 
 .burger-button {
-    /* background-color: transparent; */
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
     border: 0;
+    padding: 0;
 }
 
 .mob-menu {
@@ -133,9 +147,14 @@ input:checked+.slider:before {
     top: 0;
     left: 0;
     position: fixed;
-    padding: 29px 20px;
+    padding: 18px 20px;
     z-index: -1;
     transition: 500ms;
+}
+
+.close-button-box {
+    display: flex;
+    justify-content: right;
 }
 
 .close-button {
@@ -146,13 +165,10 @@ input:checked+.slider:before {
 }
 
 .menu-close-icon {
-    /* stroke: rgba(255, 255, 255, 1); */
-    fill: #000;
-    width: 14px;
-    height: 14px;
+    stroke: rgb(1, 1, 1);
 }
 
-.signup-link {
+.signup-button {
     display:flex;
     align-items: center;
     width: 184px;
@@ -167,9 +183,38 @@ input:checked+.slider:before {
     font-weight: 500;
     line-height: 18px;
     letter-spacing: -0.56px;
-    margin-top: 20px;
+    margin-top: 40px;
     padding-left: 14px;
     gap: 90px;
+    margin-bottom: 172px;
+}
+
+.arrow-right-icon{
+    stroke: var(--Yellow);
+}
+
+.nav-list {
+    display: none;
+    justify-content: center;
+    margin: 0;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 34px;
+    border-radius: 36px;
+    background: var(--Yellow);
+    color: #111;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
 }
 
 /* .mob-menu-nav {
