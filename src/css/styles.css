@@ -1,6 +1,7 @@
 @import url(./font-face.css);
 @import url(./loader.css);
 @import url(./scroll-up.css);
+@import url(./footer.css);
 
 :root {
     --White: rgba(255, 255, 255, 1);
