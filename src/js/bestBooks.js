@@ -38,3 +38,5 @@ function onClickCategory() {
       console.log('Помилка при отриманні даних з сервера:', error);
     });
 }
+
+console.log(getBestBooks());
