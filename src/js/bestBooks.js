@@ -26,9 +26,9 @@ function renderBookCard(book) {
   return title + `<ul class="category-list">${elements}</ul>` + seeMoreButton;
 }
 
-onClickCategory();
+renderCategory();
 
-function onClickCategory() {
+function renderCategory() {
   getBestBooks()
     .then(response => {
       const markup = response.map(renderBookCard).join('');
@@ -38,5 +38,3 @@ function onClickCategory() {
       console.log('Помилка при отриманні даних з сервера:', error);
     });
 }
-
-console.log(getBestBooks());
