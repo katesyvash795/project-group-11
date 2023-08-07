@@ -1,12 +1,13 @@
 const toggleSwitch = document.getElementById('theme-switch');
 const currentTheme = localStorage.getItem('theme');
 const mainElement = document.querySelector('body');
+const refCheckbox = document.querySelector(".theme-checkbox");
 
 if (currentTheme) {
   mainElement.classList.add(currentTheme);
 
-  if (currentTheme === 'dark') {
-    toggleSwitch.checked = true;
+  if (currentTheme === 'theme-dark') {
+    refCheckbox.checked = true;
   }
 }
 
