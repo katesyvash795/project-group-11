@@ -94,7 +94,7 @@
     .book-list-container {
         width: 337px;
         height: 472px;
-        overflow: visible;
+        overflow: scroll;
     } 
     .book-list-title {
         height: 24px;
@@ -115,7 +115,7 @@
     .book-list-container {
         width: 337px;
         height: 472px;
-        overflow: visible;
+        overflow: scroll;
     } 
     .book-list-title {
         height: 24px;
