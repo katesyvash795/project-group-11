@@ -40,6 +40,12 @@ body {
     padding: 0 20px;
 }
 
+.theme-dark {
+    background-color: black;
+}
+
+
+
 @media screen and (min-width: 375px) {
     .container {
         width: 375px;

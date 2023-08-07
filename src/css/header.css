@@ -1,3 +1,7 @@
+.container {
+    background-color: var(--bgc-primary);
+}
+
 .list {
     list-style: none;
 }
@@ -60,6 +64,22 @@
 .logo-text {
     fill: #000000;
 }
+
+.theme-dark .logo-text{
+    fill: #fff;
+}
+
+.theme-dark .header {
+    background-color: black;
+    border-color: white;
+}
+
+.theme-dark .icon-menu,
+.theme-dark .icon-cross {
+    stroke: white;
+}
+
+
 
 .bookshelf {
     width: 82px;
