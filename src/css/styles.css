@@ -5,6 +5,7 @@
 
 :root {
     --White: rgba(255, 255, 255, 1);
+    --Light: rgba(246, 246, 246, 1);
     --Yellow: rgba(234, 198, 69, 1);
     --Blue: #4f2ee8;
     --Black: rgba(32, 32, 36, 1);
@@ -15,7 +16,7 @@ body {
     margin: 0;
     font-family: 'DM Sans',
         sans-serif;
-    background-color: var(--White);
+    background-color: var(--Light);
     color: var(--Darker);
     font-size: 14px;
     line-height: 1.9;
@@ -41,7 +42,7 @@ body {
 }
 
 .theme-dark {
-    background-color: black;
+    background-color: var(--Black);
 }
 
 
