@@ -1,4 +1,4 @@
 import './js/scroll-up';
-import { onClickCategory } from "./js/renderSelectCategory";
+import './js/header';
+import './js/theme-switch';
 
-onClickCategory("Trade Fiction Paperback");
