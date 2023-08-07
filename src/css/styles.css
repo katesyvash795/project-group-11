@@ -1,6 +1,7 @@
 @import url(./font-face.css);
 @import url(./loader.css);
 @import url(./scroll-up.css);
+@import url(./modal.css);
 
 :root {
     --White: rgba(255, 255, 255, 1);
@@ -20,6 +21,10 @@ body {
     line-height: 1.9;
     font-weight: 400;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    }
 
 .visually-hidden {
     position: absolute;

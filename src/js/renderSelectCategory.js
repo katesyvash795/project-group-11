@@ -1,4 +1,5 @@
 import { getCategory } from './bookAPI';
+import  {modalShow} from './modal'
 import "../css/renderSelectCategory.css";
 const contRef = document.querySelector(`.category-list-cont`);
 
@@ -16,6 +17,7 @@ export function onClickCategory(category) {
 function renderCategory(mark) {
 
     contRef.innerHTML = mark;
+    modalShow()
 }
 
 
@@ -50,3 +52,6 @@ function markLastWord(string) {
     }
     return categoryNameAddSpan;
 }
+
+
+onClickCategory('Business Books')
