@@ -12,3 +12,12 @@
     mobileMenuRef.classList.toggle('is-open');
   });
 })();
+const currentPage = window.location.pathname; // Получаем текущий путь страницы
+
+const links = document.querySelectorAll('.nav-list-item');
+
+links.forEach(link => {
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('active');
+  }
+});

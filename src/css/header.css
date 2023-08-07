@@ -270,6 +270,15 @@ input:checked+.slider:before {
     letter-spacing: -0.02em;
     text-transform: uppercase;
 }
+.nav-list-item{
+    color: var(--Darker);
+}
+.nav-list-item.active {
+        color: black;
+        border-radius: 36px;
+        background-color: var( --Yellow);
+        padding: 8px 16px;
+      }
 
 @media screen and (min-width: 768px) {
     .container {
@@ -280,7 +289,10 @@ input:checked+.slider:before {
     .menu-button {
         display: none;
     }
-
+    .nav-box-list.mobile-nav{
+        display: flex;
+        gap: 24px;
+    }
     .signup-button.mobile-signup {
         display: flex;
         margin: 0;
