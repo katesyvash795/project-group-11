@@ -37,7 +37,7 @@ function getMarkCategory(array) {
 
 
 
-function markLastWord(string) {
+export function markLastWord(string) {
     const categoryName = string.split(' ');
     const quantityWord = categoryName.length;
     let categoryNameAddSpan = "";

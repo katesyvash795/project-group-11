@@ -1,14 +1,145 @@
-.category-list {
-    display: flex;
+.best-title-section {
+    margin-top: 40px;
 }
 
-.category-item {}
+.best-category-list {
+    list-style: none;
+}
 
-.category-item-author {}
+.best-book-list {
+    list-style: none;
+}
 
-.category-item-title {}
+.best-category-item {
+    margin-bottom: 40px;
+    text-align: end;
+}
 
-.category-item-img {
+.best-book-item {
+    text-align: left;
+    overflow: hidden;
+    width: 335px;
+}
+
+
+
+.best-title-category-list {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: 3%;
+    color: rgba(180, 175, 175, 1);
+    margin-bottom: 18px;
+    text-align: start;
+}
+
+.best-book-item-img {
     width: 335px;
     height: 485px;
+}
+
+.best-book-item-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.16;
+    letter-spacing: -4%;
+    margin-top: 14px;
+    white-space: nowrap;
+}
+
+.best-book-item-author {
+    font-size: 12px;
+    list-style: italic;
+    line-height: 1.16;
+    letter-spacing: -4%;
+    color: rgba(180, 175, 175, 1);
+    margin-top: 4px;
+}
+
+.seemore-btn {
+    padding: 14px 28px;
+    border: 2px solid;
+    border-radius: 40px;
+    border-color: var(--Blue);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.28;
+    letter-spacing: -1%;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.best-book-item {
+    align-items: center;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .best-book-item:not(:first-child) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .best-book-item:not(:nth-child(-n + 3)) {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 375px) {}
+
+@media screen and (min-width: 768px) {
+    .best-category-item {
+        width: 704px;
+    }
+
+    .best-book-list {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .best-book-item {
+
+        width: 218px;
+    }
+
+    .best-book-item-img {
+        width: 218px;
+        height: 316px;
+    }
+
+    .seemore-btn {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .best-category-item {
+        width: 996px;
+
+    }
+
+    .best-book-list {
+        gap: 24px;
+    }
+
+    .best-book-item {
+        width: 180px;
+    }
+
+    .best-book-item-img {
+        width: 180px;
+        height: 256px;
+    }
+
+    .seemore-btn {
+        margin-top: 32px;
+    }
 }
