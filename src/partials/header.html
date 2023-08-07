@@ -8,8 +8,13 @@
                 </svg>
             </a>
             <ul class="list nav-box-list mobile-nav">
-                <li><a class="nav-list-item link home-link" href="./index.html">HOME</a></li>
-                <li><a class="nav-list-item link shopping-list" href="./partials/shoppinglist.html">SHOPPING LIST</a></li>
+                <li nav-box-item><a class="nav-list-item link home-link" href="./index.html">HOME</a></li>
+                <li nav-box-item><a class="nav-list-item link shopping-list" href="./partials/shoppinglist.html">SHOPPING LIST
+                        <svg class="shopping-cart-icon" width="20" height="20">
+                            <use href="./images/icons-header.svg#shopping-cart"></use>
+                        </svg>
+                    </a>
+                </li>
             </ul>
             <div class="mobile-panel">
                 <label class="switch" id="theme-switch">
@@ -17,7 +22,7 @@
                     <span class="slider"></span>
                 </label>
                 <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button >
-                    <svg width="28" height="28" aria-label="Mobile menu button">
+                    <svg class="mobile-menu-button" width="28" height="28" aria-label="Mobile menu button">
                         <use class="icon-cross" href="./images/icons-header.svg#x-close"></use>
                         <use class="icon-menu" href="./images/icons-header.svg#align-left"></use>
                     </svg>
@@ -35,9 +40,14 @@
                     </svg>
                 </button>
                 <ul class="mobile-menu">
-                    <ul class="list nav-box-list">
+                    <ul class="list nav-box-list menu">
                         <li><a class="nav-list-item link home-link-menu" href="./index.html">HOME</a></li>
-                        <li><a class="nav-list-item link shopping-list-menu" href="">SHOPPING LIST</a></li>
+                        <li><a class="nav-list-item link shopping-list-menu" href="">SHOPPING LIST
+                                <svg class="shopping-cart-icon" width="20" height="20">
+                                    <use href="./images/icons-header.svg#shopping-cart"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </ul>
             </div>

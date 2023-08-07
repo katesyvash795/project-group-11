@@ -6,12 +6,12 @@
 
 @import url(./support.css);
 :root {
-    --White: rgba(255, 255, 255, 1);
+    --White: #ffffff;
     --Light: rgba(246, 246, 246, 1);
     --Yellow: rgba(234, 198, 69, 1);
     --Blue: #4f2ee8;
     --Black: rgba(32, 32, 36, 1);
-    --Darker: rgba(17, 17, 17, 1);
+    --Darker: #111111;
 }
 
 p,
@@ -87,7 +87,7 @@ body {
 
 @media screen and (min-width: 1440px) {
     .container {
-        width: 1392px;
+        width: 1440px;
         padding: 0 24px;
     }
 }
