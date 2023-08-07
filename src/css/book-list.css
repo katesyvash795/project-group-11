@@ -8,7 +8,7 @@
     /* gap: 32px; */
 
 }
-.book-list-title {
+/* .book-list-title {
 
     height: 18x;
     font-family: 'DM Sans', sans-serif;
@@ -16,10 +16,9 @@
     font-size: 16px;
     color: #4F2EE8;
     margin-bottom: 24px;
-    text-overflow: clip;
 
     
-}
+} */
 .book-list-ul {
     list-style: none;
     width: 500px;
@@ -63,6 +62,9 @@
  }
  .current {
     text-transform: uppercase;
+    color: #4F2EE8;
+    font-weight: 700;
+    font-size: 16px;
  }
 
  .container { 

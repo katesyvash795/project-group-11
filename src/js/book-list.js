@@ -1,16 +1,23 @@
-const itemBook = document.querySelector('.book-list-item');
-const linkBook = document.querySelector('.book-list-link');
 
-linkBook.addEventListener('click', addClass);
+const list = document.querySelector('.book-list-ul');
+const item = list.querySelectorAll('.book-list-item');
+
+
+console.log(list);
+console.log(item);
+
+
+list.addEventListener('click', addClass);
 
 function addClass (evt) {
     evt.preventDefault();
-    if(!evt.classList.contains(current)){
-        linkBook.classList.add(current);
-        itemBook.classList.add(current);
-    }
+    const removeEl = document.querySelector('.current');
+    removeEl.classList.remove('current');
+    const currentEl = evt.target;
+    currentEl.classList.add('current');
+
+    console.log(currentEl);
+
     
 
 }
-
-console.log('ok');

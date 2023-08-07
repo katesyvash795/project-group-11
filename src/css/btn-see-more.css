@@ -1,0 +1,15 @@
+.btn-seemore {
+    padding: 14px 28px;
+    height: 46px;
+    border-radius: 40px;
+    border-color: #4F2EE8;
+
+}
+
+.btn-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #111111;
+} 
