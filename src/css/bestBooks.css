@@ -1,0 +1,14 @@
+.category-list {
+    display: flex;
+}
+
+.category-item {}
+
+.category-item-author {}
+
+.category-item-title {}
+
+.category-item-img {
+    width: 335px;
+    height: 485px;
+}
