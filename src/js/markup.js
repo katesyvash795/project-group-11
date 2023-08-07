@@ -43,7 +43,7 @@ function getMarkBestBooks(array) {
   const title = `<h2 class="title-category-list">${bestBookName}</h2>`;
   const elements = array
     .map(book => {
-      return `  <ul class="books__container">
+      return `
          <li class="category-item" data-id="${book._id
         }">
         <img class="category-item-img" src="${book.book_image} "/>
