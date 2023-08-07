@@ -68,14 +68,30 @@
     border: 1px solid var(--White);
     border-radius: 50%;
 } */
-.swiper-button-next {
+/* .swiper-button-next {
     transform: rotate(90deg);
     width: 32px;
     height: 32px;
     background-color: var(--White);
     border: 1px solid var(--White);
     border-radius: 50%;
+} */
+
+
+.support-btn, .support-btn .swipe-up {
+    position: absolute;
+    top: 160px;
+    left: 162px;
+    width: 32px;
+    height: 32px;
+    background-color: var(--White);
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
 }
+
+
 .support-btn-icon {
     position: absolute;
     top: 50%;
