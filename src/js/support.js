@@ -1,11 +1,15 @@
 import Swiper from '../../node_modules/swiper/swiper-bundle.min.mjs';
 import '../../node_modules/swiper/swiper-bundle.css';
 
-const swiper = new Swiper('.swiper', {
+const swiperEl = document.querySelector(".swiper");
+const swipeDownBtn = document.querySelector(".support-btn");
+
+const swiper = new Swiper(swiperEl, {
   direction: 'vertical',
+  rewind: true,
+  loopSlides: 9,
   navigation: {
-    nextEl: 'support-btn',
-    prevEl: 'support-btn swipe-up',
+    nextEl: swipeDownBtn,
   },
   slidesPerView: 4,
   spaceBetween: 20,
@@ -16,3 +20,4 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
+
