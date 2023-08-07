@@ -30,7 +30,8 @@ function getMarkCategory(array) {
         <p class="category-item-author">${book.author}</p>
         </li>`
     }).join("");
-    return title + `<ul class="category-list">${elements}</ul>`;
+    const result = `<div class="container select-category-cont">${title}<ul class="category-list">${elements}</ul></div>`
+    return result;
 }
 
 

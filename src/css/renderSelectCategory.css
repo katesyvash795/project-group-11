@@ -1,5 +1,4 @@
 .category-list {
-    color: var(--Darker);
     list-style: none;
     padding: 40px 0;
 
@@ -46,6 +45,15 @@
     letter-spacing: -4%;
     color: rgba(180, 175, 175, 1);
     margin-top: 4px;
+}
+
+/* DARK THEME */
+.theme-dark .category-list {
+    color: var(--White);
+}
+
+.theme-dark .title-category-list {
+    color: var(--White);
 }
 
 
@@ -102,8 +110,7 @@
 
 @media screen and (min-width: 1440px) {
 
-    .category-list-cont {
-        margin-left: auto;
+    .select-category-cont {
         width: 996px;
     }
 
