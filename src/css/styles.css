@@ -4,6 +4,7 @@
 @import url(./footer.css);
 @import url(./header.css);
 
+@import url(./support.css);
 :root {
     --White: rgba(255, 255, 255, 1);
     --Light: rgba(246, 246, 246, 1);
