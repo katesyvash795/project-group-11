@@ -55,7 +55,7 @@ function getMarkBestBooks(array) {
       
    
     })
-    .join('')</ul>;
+    .join('')
   //   return title + `<ul class="category-list">${elements}</ul>`;
 }
 

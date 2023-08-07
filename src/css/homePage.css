@@ -17,10 +17,9 @@
   /* transition-property: background-color, color;
   transition-duration: 
   transition-timing-function: */
-
-  &:hover,
-  &:focus {
+}
+  .books-btn:hover,
+  .books-btn:focus {
     background-color: --Blue;
     color: color-mix(in srgb, color percentage, color percentage)
   }
-}
