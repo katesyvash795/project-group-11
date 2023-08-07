@@ -1,0 +1,58 @@
+.footer-cont {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.loader-heart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    animation: heartBeat 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loader-heart:before,
+.loader-heart:after {
+    content: "";
+    background: #4F2EE8;
+    width: 40px;
+    height: 60px;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+    transform-origin: 50% 68%;
+    box-shadow: 5px 4px 5px #0004 inset;
+}
+
+.loader-heart:after {
+    transform: rotate(-45deg);
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(0.95)
+    }
+
+    5% {
+        transform: scale(1.1)
+    }
+
+    39% {
+        transform: scale(0.85)
+    }
+
+    45% {
+        transform: scale(1)
+    }
+
+    60% {
+        transform: scale(0.95)
+    }
+
+    100% {
+        transform: scale(0.9)
+    }
+}
