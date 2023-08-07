@@ -1,8 +1,8 @@
 @import url(./font-face.css);
 @import url(./loader.css);
 @import url(./scroll-up.css);
-@import url(./support.css);
 
+@import url(./support.css);
 :root {
     --White: rgba(255, 255, 255, 1);
     --Yellow: rgba(234, 198, 69, 1);
