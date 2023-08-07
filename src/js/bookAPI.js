@@ -11,7 +11,7 @@ const BYIDWAY = '/books/';
 export async function getCategotyList() {
 
     const categoryList = await fetch(`${BASE_URL}${CATEGOTY_LIST_WAY}`).then(resolve => resolve.json());
-    // console.log(categoryList);
+    console.log(categoryList);
     return categoryList;
 
 }
@@ -20,7 +20,7 @@ export async function getCategotyList() {
 export async function getBestBooks() {
 
     const topBooks = await fetch(`${BASE_URL}${TOPBOOKS_WAY}`).then(resolve => resolve.json());
-    // console.log(topBooks);
+    console.log(topBooks);
     return topBooks;
 
 }
@@ -29,7 +29,7 @@ export async function getBestBooks() {
 export async function getCategory(categoryName) {
 
     const category = await fetch(`${BASE_URL}${CATEGORY_WAY}?category=${categoryName}`).then(resolve => resolve.json());
-    // console.log(category);
+    console.log(category);
     return category;
 
 }
