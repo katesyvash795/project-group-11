@@ -10,13 +10,13 @@ list.addEventListener('click', addClass);
 
 function addClass (evt) {
     evt.preventDefault();
-    if(!evt.target.tagName === "LI") {
-        return
+    if(evt.target.nodeName === "SPAN") {
+        const removeEl = document.querySelector('.current');
+        removeEl.classList.remove('current');
+        const currentEl = evt.target;
+        currentEl.classList.add('current');
     }
-    const removeEl = document.querySelector('.current');
-    removeEl.classList.remove('current');
-    const currentEl = evt.target;
-    currentEl.classList.add('current');
+    
 
     
 
