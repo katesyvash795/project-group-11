@@ -29,7 +29,7 @@ export async function getBestBooks() {
 export async function getCategory(categoryName) {
 
     const category = await fetch(`${BASE_URL}${CATEGORY_WAY}?category=${categoryName}`).then(resolve => resolve.json());
-    console.log(category);
+    // console.log(category);
     return category;
 
 }

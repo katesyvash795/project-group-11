@@ -52,6 +52,3 @@ function markLastWord(string) {
     }
     return categoryNameAddSpan;
 }
-
-
-onClickCategory('Business Books')
