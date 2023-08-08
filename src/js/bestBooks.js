@@ -1,3 +1,6 @@
+
+import { hideLoader } from './loader';
+import { showLoader } from './loader';
 import { getBestBooks } from './bookAPI';
 import { markLastWord, onClickCategory } from './renderSelectCategory';
 import { scrollToTop } from './scroll-up'
@@ -37,12 +40,13 @@ function renderBookCard(book) {
 renderCategory();
 
 function renderCategory() {
-  
+  showLoader()
   getBestBooks()
     .then(response => {
         const markup = `<div class="container best-category-cont"><h2 class="best-title-section title-category-list">
       ${markLastWord("Best Sellers Books")}</h2><ul class="best-category-list">${response.map(renderBookCard).join('')}</ul></div>`;
       renderBooks(markup);
+      hideLoader()
          })
     .catch(error => {
       console.log('Помилка при отриманні даних з сервера:', error);

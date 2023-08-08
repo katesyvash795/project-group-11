@@ -1,7 +1,4 @@
 
-import { hideLoader } from './loader';
-import { showLoader } from './loader';
-
 const BASE_URL = 'https://books-backend.p.goit.global';
 const CATEGOTY_LIST_WAY = '/books/category-list';
 const TOPBOOKS_WAY = '/books/top-books';
@@ -21,11 +18,10 @@ export async function getCategotyList() {
 
 // Функція, що повертає, массив об'єктів, які містять в собі назву категорії та массив 5-ти кращих книг. 
 export async function getBestBooks() {
-    showLoader()
+    
     const topBooks = await fetch(`${BASE_URL}${TOPBOOKS_WAY}`).then(resolve => resolve.json());
     console.log(topBooks);
-    hideLoader()
-    return topBooks;
+        return topBooks;
 
 }
 
