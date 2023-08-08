@@ -1,11 +1,13 @@
 
+import { hideLoader } from './loader';
+import { showLoader } from './loader';
 
 const BASE_URL = 'https://books-backend.p.goit.global';
 const CATEGOTY_LIST_WAY = '/books/category-list';
 const TOPBOOKS_WAY = '/books/top-books';
 const CATEGORY_WAY = '/books/category';
 const BYIDWAY = '/books/';
-const loader = document.querySelector('.loader');
+
 
 
 // Функція, що повертає массив з категоріями 
@@ -19,20 +21,19 @@ export async function getCategotyList() {
 
 // Функція, що повертає, массив об'єктів, які містять в собі назву категорії та массив 5-ти кращих книг. 
 export async function getBestBooks() {
-    loader.style.display = 'block';
+    showLoader()
     const topBooks = await fetch(`${BASE_URL}${TOPBOOKS_WAY}`).then(resolve => resolve.json());
     console.log(topBooks);
-    loader.style.display = 'none';
+    hideLoader()
     return topBooks;
 
 }
 
 // Функція, що повертає книги в зазначеній категорії. 
 export async function getCategory(categoryName) {
-    
-    const category = await fetch(`${BASE_URL}${CATEGORY_WAY}?category=${categoryName}`).then(resolve => resolve.json());
+        const category = await fetch(`${BASE_URL}${CATEGORY_WAY}?category=${categoryName}`).then(resolve => resolve.json());
     console.log(category);
-    return category;
+        return category;
 
 }
 
