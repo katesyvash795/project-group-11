@@ -1,18 +1,30 @@
+.up-btn-icon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+    fill: var(--White);
+
+}
+
+
 .scroll-up-btn {
     position: fixed;
     bottom: 95px;
     right: 100px;
     display: none;
 
-    padding: 10px 20px;
+
+    width: 64px;
+    height: 64px;
     background-color: rgba(79, 46, 232, 0.6);
     color: #fff;
-    border: none;
-    border-radius: 36px;
+    border: 5px solid rgba(79, 46, 232, 0.1);
+    border-radius: 50%;
     cursor: pointer;
 }
 
 .scroll-up-btn:hover,
 .scroll-up-btn:hover {
     background-color: rgba(79, 46, 232, 1);
+    border: 5px solid rgba(123, 95, 249, 1);
 }
