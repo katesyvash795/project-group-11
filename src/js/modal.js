@@ -18,7 +18,7 @@ const refs = {
     }
     
 export function modalShow() {
-const refLi = document.querySelectorAll('.category-item');
+const refLi = document.querySelectorAll('.category-item, .best-book-item');
 refLi.forEach(element => {
     element.addEventListener('click', elem => {
         clearModal()
