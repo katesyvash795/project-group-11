@@ -1,5 +1,6 @@
 import { getBestBooks } from './bookAPI';
 import { markLastWord, onClickCategory } from './renderSelectCategory';
+import { scrollToTop } from './scroll-up'
 const homeContainer = document.querySelector(`.category-list-cont`);
 
 
@@ -15,8 +16,13 @@ function renderBookCard(book) {
     .map(book => {
       return `
         <li class="best-book-item" data-id="${book._id}">
+        <div class="category-img-container">
           <img class="best-book-item-img" src="${book.book_image}"/>
-          <h2 class="best-book-item-title">${book.title}</h2>
+          <p class="category-item-img-text-card">
+                    quick view 
+                  </p>
+                  </div>
+          <h3 class="best-book-item-title">${book.title}</h3>
           <p class="best-book-item-author">${book.author}</p>
         </li>
       `;
@@ -46,6 +52,6 @@ function renderCategory() {
 homeContainer.addEventListener('click', event => {
   if (event.target.nodeName === "BUTTON") {
     onClickCategory(event.target.dataset.id);
-
+    scrollToTop();
   }
 })

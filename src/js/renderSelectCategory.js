@@ -25,7 +25,12 @@ function getMarkCategory(array) {
     const title = `<h2 class="title-category-list">${categoryName}</h2>`;
     const elements = array.map(book => {
         return `<li class="category-item" data-id="${book._id}">
+        <div class="category-img-container">
         <img class="category-item-img" src="${book.book_image} "/>
+        <p class="category-item-img-text-card">
+                    quick view 
+                  </p>
+        </div>
         <p class="category-item-title">${book.title}</p>
         <p class="category-item-author">${book.author}</p>
         </li>`
