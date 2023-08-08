@@ -41,7 +41,7 @@
 .nav-box {
     display: flex;
     width: 100%;
-    
+
 }
 
 .nav {
@@ -265,14 +265,21 @@ input:checked+.slider:before {
     gap: 16px;
 }
 
-.home-link-menu, .home-link {
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.home-link-menu,
+.home-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 72px;
     height: 34px;
     border-radius: 36px;
-    background: var(--Yellow); 
+    background: var(--Yellow);
     font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
@@ -282,14 +289,14 @@ input:checked+.slider:before {
     text-transform: uppercase;
 }
 
-.shopping-list, .shopping-list-menu {
+.shopping-list,
+.shopping-list-menu {
     display: flex;
     align-items: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     letter-spacing: -0.56px;
-    padding-top: 4px;
     gap: 4px;
 }
 
@@ -317,15 +324,15 @@ input:checked+.slider:before {
     text-transform: uppercase;
 }
 
-.nav-list-item{
+.nav-list-item {
     color: var(--Darker);
 }
 
 .nav-list-item.active {
-        color: rgb(0, 0, 0);
-        border-radius: 36px;
-        background-color: var( --Yellow);
-        padding: 8px 16px;
+    color: rgb(0, 0, 0);
+    border-radius: 36px;
+    background-color: var(--Yellow);
+    padding: 8px 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -342,11 +349,12 @@ input:checked+.slider:before {
         display: none;
     }
 
-    .nav-box-list.mobile-nav{
+    .nav-box-list.mobile-nav {
         display: flex;
         gap: 16px;
         margin-right: 100px;
     }
+
     .signup-button.mobile-signup {
         display: flex;
         margin: 0;
@@ -381,5 +389,5 @@ input:checked+.slider:before {
     .nav-box-list.mobile-nav {
         gap: 24px;
         margin-right: 744px;
-    }    
+    }
 }
