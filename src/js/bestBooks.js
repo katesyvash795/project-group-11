@@ -34,12 +34,10 @@ function renderCategory() {
   
   getBestBooks()
     .then(response => {
-      // loader.style.display = 'block';
-      const markup = `<div class="container best-category-cont"><h2 class="best-title-section title-category-list">
+        const markup = `<div class="container best-category-cont"><h2 class="best-title-section title-category-list">
       ${markLastWord("Best Sellers Books")}</h2><ul class="best-category-list">${response.map(renderBookCard).join('')}</ul></div>`;
       renderBooks(markup);
-      loader.style.display = 'none';
-    })
+         })
     .catch(error => {
       console.log('Помилка при отриманні даних з сервера:', error);
     });
