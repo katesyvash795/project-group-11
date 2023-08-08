@@ -208,14 +208,24 @@ input:checked+.slider:before {
     width: 100vw;
     height: 100vh;
     background: radial-gradient(189.32% 190.93% at 59.76% -23.42%,
-            #4F2EE8 18.03%, #FFF 100%),
-        url("../images/mobile-menu-bkg/mobile-menu-bg-1.png");
+            #4F2EE8 18.03%, #FFF 100%);
     padding: 0 20px;
     z-index: -2;
 }
 
 .menu-container.is-open {
     display: block;
+}
+
+.menu-bg {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bg-image {
+    display: flex;
+    width: 475px;
+    transform: rotate(-15deg);
 }
 
 .signup-button {
@@ -257,6 +267,7 @@ input:checked+.slider:before {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin-bottom: 172px;
 }
 
 .nav-box-list.menu {
@@ -345,7 +356,7 @@ input:checked+.slider:before {
         display: none;
     }
 
-    .menu-container {
+    .menu-container.is-open {
         display: none;
     }
 
