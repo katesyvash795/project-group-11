@@ -1,8 +1,8 @@
 .loader {
     width: 48px;
     height: 48px;
-    display: block;
-    margin: 20px auto;
+    display: none;
+    margin: 100px auto;
     position: relative;
     border: 3px solid #0b0b0b;
     border-radius: 50%;
@@ -20,6 +20,14 @@
     position: absolute;
     bottom: -20px;
     left: 46px;
+}
+
+.theme-dark .loader {
+    border: 3px solid var(--White);
+}
+
+.theme-dark .loader::after {
+    background: var(--White);
 }
 
 @keyframes animloader {
