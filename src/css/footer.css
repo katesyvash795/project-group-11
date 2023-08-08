@@ -1,3 +1,7 @@
+.theme-dark .footer-text {
+    color: var(--White);
+}
+
 .footer-cont {
     display: flex;
     justify-content: space-evenly;

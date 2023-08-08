@@ -1,6 +1,7 @@
 .support-container {
     position: relative;
     top: 372px;
+    display: none;
 }
 
 .support-ukraine {
@@ -8,18 +9,20 @@
     width: 335px;
     height: 352px;
     padding-top: 24px;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     padding-left: 40px;
 
     border-radius: 16px;
     background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, var(--Blue) 18.03%, var(--White) 100%);
     box-shadow: 0px 10px 10px 0px rgba(245, 245, 247, 0.10);
 }
+
 .support-heading {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
+
 .support-title {
     color: var(--White);
     font-family: DM Sans;
@@ -32,11 +35,13 @@
     margin: 0;
     margin-right: 12px;
 }
+
 .support-gerb {
     width: 20px;
     height: 32px;
     fill: var(--White);
 }
+
 .supporter-number {
     color: var(--White);
     font-family: DM Sans;
@@ -49,10 +54,12 @@
     margin-right: 14px;
     transform: translateY(50%);
 }
+
 .supporter-img {
     display: block;
     height: 32px;
 }
+
 .swiper {
     width: 220px;
     height: 188px;
@@ -93,25 +100,29 @@
         height: 474px;
         padding-bottom: 24px;
     }
+
     .support-title {
         font-size: 24px;
         line-height: 28px;
         letter-spacing: -0.96px;
     }
+
     .swiper {
         height: 292px;
     }
+
     .support-btn {
         bottom: 24px;
         left: 50%;
         width: 38px;
         height: 38px;
     }
+
     .support-btn-icon {
         width: 22px;
         height: 22px;
     }
-       
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -119,6 +130,7 @@
         top: 670px;
         float: left;
     }
+
     .support-ukraine {
         width: 356px;
     }
