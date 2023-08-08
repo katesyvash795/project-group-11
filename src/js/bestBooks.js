@@ -37,12 +37,13 @@ function renderBookCard(book) {
 renderCategory();
 
 function renderCategory() {
+  
   getBestBooks()
     .then(response => {
-      const markup = `<div class="container best-category-cont"><h2 class="best-title-section title-category-list">
+        const markup = `<div class="container best-category-cont"><h2 class="best-title-section title-category-list">
       ${markLastWord("Best Sellers Books")}</h2><ul class="best-category-list">${response.map(renderBookCard).join('')}</ul></div>`;
       renderBooks(markup);
-    })
+         })
     .catch(error => {
       console.log('Помилка при отриманні даних з сервера:', error);
     });
