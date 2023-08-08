@@ -67,10 +67,36 @@
     letter-spacing: -1%;
     text-transform: uppercase;
     margin-top: 8px;
+    transition: color 200ms ease-in,
+        background-color 200ms ease-in,
+        border-color 200ms ease-in;
+    background-color: inherit;
 }
 
 .best-book-item {
     align-items: center;
+}
+
+/* HOVER (основні стилі в RenderSelect) */
+.best-book-item:is(:hover, :focus) .category-item-img-text-card {
+    transform: translateY(0);
+}
+
+/* Hover see more */
+
+.seemore-btn:hover {
+    color: var(--White);
+    background-color: var(--Blue);
+    border-color: var(--Blue);
+}
+
+/* DARK THEME */
+.theme-dark .best-book-item-title {
+    color: var(--White);
+}
+
+.theme-dark .seemore-btn {
+    color: var(--White);
 }
 
 

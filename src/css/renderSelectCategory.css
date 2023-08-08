@@ -56,6 +56,35 @@
     color: var(--White);
 }
 
+/* HOVER */
+.category-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.category-item-img-text-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 70px;
+    padding: 26px 52px;
+    color: var(--Darker);
+    background-color: #EAC645;
+    transition: transform 250ms ease;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -4%;
+    white-space: nowrap;
+}
+
+.category-item:is(:hover, :focus) .category-item-img-text-card {
+    transform: translateY(0);
+}
 
 
 @media screen and (max-width: 767px) {
