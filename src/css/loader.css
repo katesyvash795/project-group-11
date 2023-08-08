@@ -22,6 +22,14 @@
     left: 46px;
 }
 
+.theme-dark .loader {
+    border: 3px solid var(--White);
+}
+
+.theme-dark .loader::after {
+    background: var(--White);
+}
+
 @keyframes animloader {
     0% {
         transform: translate(-10px, -10px);
