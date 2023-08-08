@@ -4,7 +4,7 @@
 @import url(./footer.css);
 @import url(./header.css);
 @import url(./bestBooks.css);
-
+@import url(./modal.css);
 @import url(./support.css);
 
 :root {
@@ -48,6 +48,10 @@ body {
     line-height: 1.9;
     font-weight: 400;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    }
 
 .visually-hidden {
     position: absolute;
