@@ -6,8 +6,10 @@
     padding-top: 12px;
     padding-bottom: 40px;
     background-color: var(--White);
-    transform: translate(50%, 0);
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .locked {
@@ -87,6 +89,7 @@ font-size: 14px;
     border-radius: 8px;
     display: block;
     width: 285px;
+    /* background-image: url(../images/book-store-icon/book-load.png); */
 }
 
 .modal-links {
@@ -96,6 +99,15 @@ font-size: 14px;
     height: 100%;
     filter: grayscale(100%);
     margin-bottom: 40px;
+}
+
+.after-button {
+    color: rgba(17, 17, 17, 0.5);
+    text-align: center;
+    line-height: 1.2;
+    font-size: 10px;
+    width: 262px;
+    margin: 8px auto 0 auto;
 }
 
 
@@ -154,6 +166,12 @@ font-size: 14px;
     display: block;
     position: absolute;
     left: 92%;
-    top: 5%
+    top: 5%;
+}
+
+.after-button {
+    font-size: 12px;
+    line-height: 1.16;
+    width: 350px;
 }
 }
