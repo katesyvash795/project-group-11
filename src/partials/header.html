@@ -1,23 +1,30 @@
 <header class="header container">
     <div class="header-box">
         <nav class="nav-box">
-            <a class="header-logo  link" href="./index.html" rel="noopener noreferrer nofollow" class="logo">
+            <a class="header-logo  link logo" href="./index.html" rel="noopener noreferrer nofollow">
                 <img class="logo-svg" src="./images/header/logo.svg" alt="logo" />
                 <svg class="logo-text" width="77" height="28">
                     <use class="bookshelf" href="./images/icons-header.svg#Bookshelf"></use>
                 </svg>
             </a>
             <ul class="list nav-box-list mobile-nav">
-                <li><a class="nav-list-item link home-link" href="./index.html">HOME</a></li>
-                <li><a class="nav-list-item link shopping-list" href="./partials/shoppinglist.html">SHOPPING LIST</a></li>
+                <li class="nav-box-item"><a class="nav-list-item link home-link" href="./index.html">HOME</a></li>
+                <li class="nav-box-item"><a class="nav-list-item link shopping-list"
+                        href="./partials/shoppinglist.html">SHOPPING LIST
+                        <svg class="shopping-cart-icon" width="20" height="20">
+                            <use href="./images/icons-header.svg#shopping-cart"></use>
+                        </svg>
+                    </a>
+                </li>
             </ul>
             <div class="mobile-panel">
                 <label class="switch" id="theme-switch">
                     <input type="checkbox" class="theme-checkbox">
                     <span class="slider"></span>
                 </label>
-                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button >
-                    <svg width="28" height="28" aria-label="Mobile menu button">
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg class="mobile-menu-button" width="28" height="28" aria-label="Mobile menu button">
                         <use class="icon-cross" href="./images/icons-header.svg#x-close"></use>
                         <use class="icon-menu" href="./images/icons-header.svg#align-left"></use>
                     </svg>
@@ -28,18 +35,26 @@
                     </svg>
                 </button>
             </div>
-                        <div class="menu-container" id="menu-container" data-menu>
+            <div class="menu-container" id="menu-container" data-menu>
                 <button class="signup-button" type="button">Sign up
                     <svg class="arrow-right-icon" width="20" height="20">
                         <use href="./images/icons-header.svg#arrow-right"></use>
                     </svg>
                 </button>
-                <ul class="mobile-menu">
-                    <ul class="list nav-box-list">
-                        <li><a class="nav-list-item link home-link-menu" href="./index.html">HOME</a></li>
-                        <li><a class="nav-list-item link shopping-list-menu" href="">SHOPPING LIST</a></li>
+                <div class="mobile-menu">
+                    <ul class="list nav-box-list menu">
+                        <li class="nav-box-item"><a class="nav-list-item link home-link-menu" href="./index.html">HOME</a></li>
+                        <li class="nav-box-item"><a class="nav-list-item link shopping-list-menu" href="">SHOPPING LIST
+                                <svg class="shopping-cart-icon" width="20" height="20">
+                                    <use href="./images/icons-header.svg#shopping-cart"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </ul>
+                </div>
+                <div class="menu-bg">
+                    <img class="menu-bg-image" src="./images/mobile-menu-bkg/mobile-menu-bg-1.png" alt="books">
+                </div>
             </div>
         </nav>
     </div>
