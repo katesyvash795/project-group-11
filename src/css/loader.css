@@ -1,8 +1,8 @@
 .loader {
     width: 48px;
     height: 48px;
-    display: block;
-    margin: 20px auto;
+    display: none;
+    margin: 100px auto;
     position: relative;
     border: 3px solid #0b0b0b;
     border-radius: 50%;
