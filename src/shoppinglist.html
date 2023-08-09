@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping list</title>
+    <link rel="stylesheet" href="./css/shop.css" />
+</head>
+<body>
+  <include src="./partials/scroll-up.html"></include>
+  <include src="./partials/header.html"></include>
+<main>   
+    
+       <include src="./partials/supportukraine.html"></include> 
+    <div class="shopping-div container">
+        <div class="shopping-div-svg">
+<div class="shop-icons"><p class="shopping">Shopping<span class="list"> List</span></p></div>
+        </div>
+        <ul class="js-list shopping-list-section">
+            
+        </ul>
+        <div class="is-hidden cart">
+          <p class="empty-cart-notification">This page is empty, add some books and proceed to order.</p> 
+          <img src="./images/shopping-list-shops/book.png" class="empty-cart-img" alt="book" width="265" height="168" />
+        </div>
+    </div>
+  </main>
+
+
+  <include src="./partials/footer.html"></include>
+  <script type="module" src="./shoppinglist.js"></script>
+</body>
+</html>
+
