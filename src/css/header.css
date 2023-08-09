@@ -316,9 +316,7 @@ input:checked+.slider:before {
     color: var(--White);
 }
 
-.theme-dark .shopping-cart-icon {
-    fill: var(--White);
-}
+
 
 .nav-box-item {
     display: flex;
@@ -399,6 +397,6 @@ input:checked+.slider:before {
 
     .nav-box-list.mobile-nav {
         gap: 24px;
-        margin-right: 744px;
+        margin-right: 680px;
     }
 }
