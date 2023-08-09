@@ -1,37 +1,42 @@
 
-import getCategotyList from '.js/bookAPI.js'
+import { getCategotyList } from './bookAPI'
 
 const list = document.querySelector('.book-list-ul');
 
-// function createMarkup (list) {
-//     return list 
-//     .map(({})) => {
-//         return ` <li class="book-list-item">
-//                      <a href="" class="book-list-link"><span class="text current">${}</span></a>
-//                 </li>`
-//     }
-//     .join('');
-// }
-// const markup = createMarkup(getCategotyLis());
-// list.insertAdjacentHTML = ('beforeend', markup);
 
 
-const item = list.querySelectorAll('.book-list-item');
+function renderBookList() {
+    getCategotyList().then(response => {
+        list.insertAdjacentHTML('beforeend', createMarkup(response));
+    }
+    );
+}
+
+function createMarkup(list) {
+    const result = list.map(element => {
+        return ` <li class="book-list-item">
+                     <a href="" class="book-list-link"><span>${element.list_name}</span></a>
+                </li>`
+    }).join('');
+    console.log(result);
+    return result;
+}
+
+
+
+renderBookList();
 
 
 list.addEventListener('click', addClass);
 
-function addClass (evt) {
+function addClass(evt) {
     evt.preventDefault();
-    if(evt.target.nodeName === "SPAN") {
+    if (evt.target.nodeName === "SPAN") {
         const removeEl = document.querySelector('.current');
         removeEl.classList.remove('current');
         const currentEl = evt.target;
         currentEl.classList.add('current');
     }
-    
-
-    
 
 }
 

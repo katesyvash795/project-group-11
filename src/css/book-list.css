@@ -1,6 +1,3 @@
-.book-list {
-
-}
 .book-list-container {
     width: 307px;
     height: 228px;
@@ -8,6 +5,7 @@
     /* gap: 32px; */
 
 }
+
 /* .book-list-title {
 
     height: 18x;
@@ -43,87 +41,83 @@
 .book-list-item:not(:last-child) {
     margin-bottom: 24px;
 }
+
 .book-list-link {
     text-decoration: none;
- 
+
 }
- a.book-list-link {
+
+a.book-list-link {
     color: #11111199;
     transition: color 300ms linear;
- }
+}
 
- a.book-list-link:hover,
- a.book-list-link:focus {
+a.book-list-link:hover,
+a.book-list-link:focus {
     color: #4F2EE8;
- }
- a.current {
+}
+
+a.current {
     color: #4F2EE8;
 
- }
- .current {
+}
+
+.current {
     text-transform: uppercase;
     color: #4F2EE8;
     font-weight: 700;
     font-size: 16px;
- }
+}
 
- .container { 
-    width: 100%; 
-    padding-left: 20px; 
-    padding-right: 20px; 
-} 
- 
-@media screen and (min-width: 375px) { 
-    /* .container { 
-        width: 375px; 
-        margin-left: auto; 
-        margin-right: auto; 
-    }  */
-.book-list-container {
-    width: 307px;
-    height: 228px;
+.container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-} 
-} 
- 
-@media screen and (min-width: 768px) { 
-    /* .container { 
-        width: 744px; 
-    }  */
+@media screen and (min-width: 375px) {
+
+    .book-list-container {
+        width: 307px;
+        height: 228px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+
 
     .book-list-container {
         width: 337px;
         height: 472px;
         overflow: scroll;
-    } 
+    }
+
     .book-list-title {
         height: 24px;
         font-size: 18px;
         margin-bottom: 32px;
     }
-    .book-list-item:not(:last-child) {
-        margin-bottom: 32px;
-    }
-} 
- 
-@media screen and (min-width: 1440px) { 
-    /* .container { 
-        width: 1392px; 
-        padding-left: 24px; 
-        padding-right: 24px; 
-    }  */
-    .book-list-container {
-        width: 337px;
-        height: 472px;
-        overflow: scroll;
-    } 
-    .book-list-title {
-        height: 24px;
-        margin-bottom: 32px;
-    }
+
     .book-list-item:not(:last-child) {
         margin-bottom: 32px;
     }
 }
 
+@media screen and (min-width: 1440px) {
 
+    .book-list-container {
+        width: 337px;
+        height: 472px;
+        overflow: scroll;
+    }
+
+    .book-list-title {
+        height: 24px;
+        margin-bottom: 32px;
+    }
+
+    .book-list-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
