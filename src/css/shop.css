@@ -1,0 +1,230 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./loader.css);
+@import url(./scroll-up.css);
+@import url(./support.css);
+:root {
+    --White: #ffffff;
+    --Light: rgba(246, 246, 246, 1);
+    --Yellow: rgba(234, 198, 69, 1);
+    --Blue: #4f2ee8;
+    --Black: rgba(32, 32, 36, 1);
+    --Darker: #111111;
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans',
+        sans-serif;
+    background-color: var(--Light);
+    color: var(--Darker);
+    font-size: 14px;
+    line-height: 1.9;
+    font-weight: 400;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    }
+    p,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+    margin: 0;
+    }
+    img{
+        /* display: block; */
+    }
+    ul{
+        padding-left: 0;
+        margin: 0;
+    }
+    button{
+        cursor: pointer;
+    }
+
+    .shopping-list-section {
+        margin-top: 40px;
+        display: flex;
+        gap: 40px;
+    }
+    .empty-cart-notification{
+        
+    }
+    .shopping-div{
+    
+    }
+    .shopping-div-svg {
+        margin-bottom: 40px;
+    }
+    .shop-icons {
+    }
+    .is-hidden{
+        display: none;
+    }
+    .shopping-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    }
+    .shop-img{
+    padding: 24px;
+    border-radius: 8px;
+    }
+    .shopping-list-item {
+        display: flex;
+        /* gap: 24px; */
+        background-color: #ffffff;
+    border: 2px solid rgba(79, 46, 232, 0.4);
+    border-radius: 16px;
+    width: 996px;
+    height: 213px;
+    }
+    .shop-item-div{
+        padding: 24px 24px 24px 0;
+    }
+    .shopping-list-text{
+        width:808px;
+        height:53px;
+        font-size:14px;
+    line-height:18px;
+    margin-bottom: 32px;
+    }
+    .shopping-list-title {
+    
+    }
+    .shopping-list-category {
+        margin-bottom: 14px;
+    }
+    .shopping-list-author {
+        margin-top: auto;
+    }
+    .book-links {
+        display: flex;
+        gap: 16px;
+    }
+    .js-remove {
+        width: 38px;
+        height: 38px;
+        border: none;
+        border-radius:50% ;
+        background-color: rgba(79, 46, 232, 1);
+    }
+    .author-icons{
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-item-div{
+        display: flex;
+    justify-content: space-between;
+        margin-bottom: 4px;
+    }
+    @media screen and (min-width: 375px) {
+        .container {
+            width: 375px;
+            margin: 0 auto;
+        }
+       .hidden{
+        display: none;
+       } 
+    .uk{
+        width:0px;
+    }
+    .shopping-list-section{
+        justify-content: center;
+    }
+    .shop-img{
+    padding: 14px;
+    }
+    .shopping-list-category{
+        margin-bottom: 8px;
+    }
+    .shopping-list-item {
+    width: 335px;
+    height: 170px;
+    }
+    .shop-item-div{
+        padding: 14px 14px 14px 0;
+    }
+    .shopping-list-text{
+        width:193px;
+    margin-bottom: 14px;
+    }
+    .js-remove {
+        width: 28px;
+        height: 28px;
+    }
+    .top-item-div{
+        margin-bottom: 4px;
+    }
+    .shop-img{
+        width: 100px;
+        height: 142px;
+    }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .container {
+            width: 768px;
+            padding: 0 32px;
+        }
+    
+    .shop-img{
+    padding: 24px;
+    border-radius: 8px;
+    }
+    .shopping-list-item {
+    width: 704px;
+    height: 213px;
+    }
+    
+    .js-remove {
+        width: 38px;
+        height: 38px;
+    }
+    .shopping-list-text{
+        width:508px;
+    }
+    .shop-img{
+        width: 116px;
+        height: 165px;
+    }
+    }
+    
+    @media screen and (min-width: 1440px) {
+        .container {
+            width: 1392px;
+            padding: 0 24px;
+        }
+        .hidden{
+            display: block;
+        }
+    }
