@@ -1,8 +1,9 @@
-const addToShoppingList = document.querySelector('.modal-button')
-const removeFromShoppingList = document.querySelector('.modal-button')
+// const addToShoppingList = document.querySelector('.modal-button')
+// const removeFromShoppingList = document.querySelector('.modal-button')
 
-addToShoppingList = addEventListener('click', addToShoppingList)
-removeFromShoppingList = addEventListener('click', removeFromShoppingList)
+// addToShoppingList = addEventListener('click', addToShoppingList)
+// removeFromShoppingList = addEventListener('click', removeFromShoppingList)
+// const storageKey = 'shoppingList';
 
 export function addToShoppingList(bookData) {
 

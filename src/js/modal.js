@@ -17,13 +17,15 @@ const refs = {
         afterButton: document.querySelector('.after-button')
     }
     
+const storageKey = 'shoppingList';
+
 export function modalShow() {
-const refLi = document.querySelectorAll('.category-item, .best-book-item');
-refLi.forEach(element => {
+  const refLi = document.querySelectorAll('.category-item');
+  refLi.forEach(element => {
     element.addEventListener('click', elem => {
-        clearModal()
-        const elId = elem.currentTarget.dataset.id;
-    getBookById(elId).then(resp => {
+      clearModal();
+      const elId = elem.currentTarget.dataset.id;
+      getBookById(elId).then(resp => {
         refs.modalAuthor.textContent = resp.author;
         refs.modalTitle.textContent = resp.title;
         refs.modalDescription.textContent = resp.description;
@@ -31,11 +33,25 @@ refLi.forEach(element => {
         refs.modal1.setAttribute('href', resp.buy_links[0].url);
         refs.modal2.setAttribute('href', resp.buy_links[1].url);
         refs.modal3.setAttribute('href', resp.buy_links[4].url);
-    })
-    openModal()
-    document.addEventListener('keydown', onEscape)
-});
-})}
+
+                const shoppingList = JSON.parse(localStorage.getItem(storageKey)) || [];
+        const bookIndex = shoppingList.findIndex(item => item.title === resp.title);
+
+        if (bookIndex === -1) {
+          refs.modalButton.textContent = 'Add to shopping list';
+          refs.afterButton.textContent = '';
+        } else {
+          refs.modalButton.textContent = 'Remove from the shopping list';
+          refs.afterButton.textContent =
+            'Congratulations! You have added the book to the shopping list. To delete, press the button "Remove from the shopping list".';
+        }
+      });
+
+      openModal();
+      document.addEventListener('keydown', onEscape);
+    });
+  });
+}
 
 function closeModal() {
 modalWindow.classList.add('visually-hidden')
@@ -76,10 +92,32 @@ function clearModal() {
 closeBtn.addEventListener('click', closeModal);
 refs.modalButton.addEventListener('click', buttonChange);
 
-  function buttonChange() {
-    if (refs.modalButton.textContent === 'Add to shopping list') {
-        refs.modalButton.textContent = 'Remove from the shopping list';
-        refs.afterButton.textContent = 'Congratulations! You have added the book to the shopping list. To delete, press the button "Remove from the shopping list".'
-    } else {refs.modalButton.textContent = 'Add to shopping list';
-    refs.afterButton.textContent = ''}
+function buttonChange() {
+  const bookData = {
+    author: refs.modalAuthor.textContent,
+    title: refs.modalTitle.textContent,
+    description: refs.modalDescription.textContent,
+    book_image: refs.modalImage.getAttribute('src'),
+    buy_links: [
+      { url: refs.modal1.getAttribute('href') },
+      { url: refs.modal2.getAttribute('href') },
+      { url: refs.modal3.getAttribute('href') }
+    ]
+  };
+
+  const shoppingList = JSON.parse(localStorage.getItem(storageKey)) || [];
+  const bookIndex = shoppingList.findIndex(item => item.title === bookData.title);
+
+  if (bookIndex === -1) {
+    shoppingList.push(bookData);
+    localStorage.setItem(storageKey, JSON.stringify(shoppingList));
+    refs.modalButton.textContent = 'Remove from the shopping list';
+    refs.afterButton.textContent =
+      'Congratulations! You have added the book to the shopping list. To delete, press the button "Remove from the shopping list".';
+  } else {
+    shoppingList.splice(bookIndex, 1);
+    localStorage.setItem(storageKey, JSON.stringify(shoppingList));
+    refs.modalButton.textContent = 'Add to shopping list';
+    refs.afterButton.textContent = '';
   }
+}
