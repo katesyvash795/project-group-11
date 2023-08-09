@@ -45,7 +45,7 @@ export function renderCategory() {
   showLoader()
   getBestBooks()
     .then(response => {
-      const markup = `<div class="container best-category-cont"><h2 class="best-title-section title-category-list">
+      const markup = `<div class=" best-category-cont"><h2 class="best-title-section title-category-list">
       ${markLastWord("Best Sellers Books")}</h2><ul class="best-category-list">${response.map(renderBookCard).join('')}</ul></div>`;
       renderBooks(markup);
       hideLoader()
