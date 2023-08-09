@@ -26,8 +26,6 @@
     list-style: none;
     width: 500px;
     padding: 0;
-
-
 }
 
 
@@ -74,28 +72,19 @@ a.current {
     font-size: 16px;
 }
 
-.container {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 @media screen and (min-width: 375px) {
 
     .book-list-container {
         width: 307px;
         height: 228px;
-
     }
 }
 
 @media screen and (min-width: 768px) {
 
-
     .book-list-container {
         width: 337px;
         height: 472px;
-
     }
 
     .book-list-title {
@@ -112,9 +101,7 @@ a.current {
 @media screen and (min-width: 1440px) {
 
     .book-list-container {
-        width: 337px;
-        height: 472px;
-
+        width: 356px;
     }
 
     .book-list-title {

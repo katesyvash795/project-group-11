@@ -1,7 +1,6 @@
-.support-container {
-    position: relative;
-    top: 372px;
-    /* display: none; */
+.support {
+    display: flex;
+    margin-top: 40px;
 }
 
 .support-ukraine {
@@ -11,7 +10,7 @@
     padding-top: 24px;
     padding-bottom: 20px;
     padding-left: 40px;
-
+    position: relative;
     border-radius: 16px;
     background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, var(--Blue) 18.03%, var(--White) 100%);
     box-shadow: 0px 10px 10px 0px rgba(245, 245, 247, 0.10);
@@ -76,10 +75,14 @@
     background-color: var(--White);
     border: 1px solid var(--White);
     border-radius: 50%;
-    z-index: 10;
     cursor: pointer;
 }
-
+.support-btn:hover {
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.3);
+}
+.support-btn:active {
+    box-shadow: 0px 0px 0px 4px rgba(79, 46, 232, 0.3);
+}
 .support-btn-icon {
     position: absolute;
     top: 50%;
@@ -91,9 +94,8 @@
 }
 
 @media screen and (min-width: 768px) {
-    .support-container {
-        top: 112px;
-        float: right;
+    .support {
+        margin-top: 0;
     }
 
     .support-ukraine {
@@ -126,11 +128,9 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .support-container {
-        top: 670px;
-        float: left;
-    }
-
+    .support {
+        margin-top: 0;
+    } 
     .support-ukraine {
         width: 356px;
     }
