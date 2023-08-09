@@ -40,19 +40,20 @@ refLi.forEach(element => {
 function closeModal() {
 modalWindow.classList.add('visually-hidden')
 document.body.classList.remove('locked')
-
+modalWindow.removeEventListener('click', backDropClick)
 }
 
 function openModal() {
     modalWindow.classList.remove('visually-hidden')
     document.body.classList.add('locked')
+    modalWindow.addEventListener('click', backDropClick);
 }
 
 function backDropClick(e) {
     if (e.target === modalWindow) {
       closeModal();
     }
-    modalWindow.removeEventListener('click', backDropClick)
+    
 }
 
 function onEscape(event) {
@@ -71,7 +72,7 @@ function clearModal() {
     refs.modal3.setAttribute('href', '');
   }
 
-modalWindow.addEventListener('click', backDropClick);
+
 closeBtn.addEventListener('click', closeModal);
 refs.modalButton.addEventListener('click', buttonChange);
 
