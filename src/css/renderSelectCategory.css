@@ -127,6 +127,7 @@
     .title-category-list {
         font-size: 48px;
         line-height: 1.08;
+        margin-top: 98px;
     }
 }
 
@@ -158,4 +159,7 @@
         height: 256px;
     }
 
+    .title-category-list {
+        margin-top: 0;
+    }
 }
