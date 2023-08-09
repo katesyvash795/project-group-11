@@ -4,11 +4,13 @@ import { showLoader } from './loader';
 import { getBestBooks } from './bookAPI';
 import { markLastWord, onClickCategory } from './renderSelectCategory';
 import { scrollToTop } from './scroll-up'
+import  {modalShow} from './modal'
 const homeContainer = document.querySelector(`.category-list-cont`);
 
 
 function renderBooks(mark) {
   homeContainer.innerHTML = mark;
+  modalShow()
 }
 
 function renderBookCard(book) {
