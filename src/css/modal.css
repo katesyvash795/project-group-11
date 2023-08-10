@@ -103,7 +103,7 @@ border-color: var(--White);
     border-radius: 8px;
     display: block;
     width: 285px;
-    /* background-image: url(../images/book-store-icon/book-load.png); */
+    height: 290px;
 }
 
 .modal-links {
