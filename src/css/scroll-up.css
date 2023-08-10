@@ -8,6 +8,7 @@
 
 
 .scroll-up-btn {
+    z-index: 1000;
     position: fixed;
     bottom: 95px;
     right: 100px;

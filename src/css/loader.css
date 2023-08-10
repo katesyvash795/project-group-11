@@ -1,3 +1,27 @@
+.lader-container {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+    .lader-container {
+        width: 375px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .lader-container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .lader-container {
+        width: 1000px;
+    }
+}
+
 .loader {
     width: 48px;
     height: 48px;
