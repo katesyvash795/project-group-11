@@ -400,3 +400,6 @@ input:checked+.slider:before {
         margin-right: 680px;
     }
 }
+.theme-dark .shopping-cart-icon{
+    fill: var(--white);
+}
