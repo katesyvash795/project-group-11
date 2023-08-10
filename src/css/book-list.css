@@ -93,6 +93,7 @@ a.current {
     .book-list-container {
         width: 307px;
         height: 228px;
+        overflow-x: hidden;
     }
 }
 
@@ -101,6 +102,7 @@ a.current {
     .book-list-container {
         width: 337px;
         height: 472px;
+        overflow-x: hidden;
     }
 
     .book-list-title {
@@ -118,6 +120,7 @@ a.current {
 
     .book-list-container {
         width: 356px;
+        overflow-x: hidden;
     }
 
     .book-list-title {

@@ -1,16 +1,14 @@
-
 import { hideLoader } from './loader';
 import { showLoader } from './loader';
 import { getBestBooks } from './bookAPI';
 import { markLastWord, onClickCategory } from './renderSelectCategory';
-import { scrollToTop } from './scroll-up'
-import { modalShow } from './modal'
+import { scrollToTop } from './scroll-up';
+import { modalShow } from './modal';
 const homeContainer = document.querySelector(`.category-list-cont`);
-
 
 function renderBooks(mark) {
   homeContainer.innerHTML = mark;
-  modalShow()
+  modalShow();
 }
 
 function renderBookCard(book) {
@@ -42,23 +40,26 @@ function renderBookCard(book) {
 renderCategory();
 
 export function renderCategory() {
-  showLoader()
+  showLoader();
   getBestBooks()
     .then(response => {
       const markup = `<div class=" best-category-cont"><h2 class="best-title-section title-category-list">
-      ${markLastWord("Best Sellers Books")}</h2><ul class="best-category-list">${response.map(renderBookCard).join('')}</ul></div>`;
+      ${markLastWord(
+        'Best Sellers Books'
+      )}</h2><ul class="best-category-list">${response
+        .map(renderBookCard)
+        .join('')}</ul></div>`;
       renderBooks(markup);
-      hideLoader()
+      hideLoader();
     })
     .catch(error => {
       console.log('Помилка при отриманні даних з сервера:', error);
     });
 }
 
-
 homeContainer.addEventListener('click', event => {
-  if (event.target.nodeName === "BUTTON") {
+  if (event.target.nodeName === 'BUTTON') {
     onClickCategory(event.target.dataset.id);
     scrollToTop();
   }
-})
+});
