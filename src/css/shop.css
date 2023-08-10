@@ -150,7 +150,6 @@ width: 244px;
         border: 2px solid rgba(79, 46, 232, 0.4);
     }
 .shopping-div-svg{
-    margin-top: 40px;
     margin-bottom: 40px;
 }
 .shopping-list-section{
@@ -197,6 +196,11 @@ color: #B4AFAF;
     align-items: center;
 justify-content: space-between;
 }
+.support-shopping-section{
+    display: flex;
+    gap: 40px;
+    padding: 0 20px 0 20px;
+}
     @media screen and (min-width: 375px) {
         .container {
             width: 375px;
@@ -205,13 +209,21 @@ justify-content: space-between;
        .hidden{
         display: none;
        } 
-
+       .shopping{
+        margin-top: 40px;
+       }
+       .support-shopping-section{
+        justify-content: center;
+       }
     }
     
     @media screen and (min-width: 768px) {
         .container {
             width: 768px;
             padding: 0 32px;
+        }
+        .support-shopping-section{
+            justify-content: flex-start;
         }
         .amazon{
             width: 48px;
@@ -231,8 +243,7 @@ justify-content: space-between;
         }
         .shopping-div-svg{
             width: 704px;
-            align-items: flex-start;
-            justify-content: flex-start;
+
         }
         .shopping-div{
             align-items: flex-start;
@@ -247,8 +258,7 @@ justify-content: space-between;
             margin-top: 140px;
 
             width: 349px;
-            width: 349px;
-    flex-direction: column;
+
         }
     .shop-item-div{
 width: 508px;
@@ -270,21 +280,31 @@ padding: 24px 24px 24px 0;
             display: block;
         }
         .shopping-div{
-            margin-left: 40px;
+padding: 0;
+margin-bottom: 0;
+width: 951px;
+        }
+        .support-shopping-section{
+            padding: 0 24px 0 24px;
         }
         .shopping-list-item{
-            width: 996px;
+            width: 951px;
         }
         .shopping{
             width: 996px;
+            margin-top: 0;
         }
     .shop-item-div{
 width: 808px;
     }
+    .support-shopping-section{
+        margin-top: 40px;
+        margin-bottom: 140px;
+    }
     }
 
 /*dark*/
-.theme-dark .home-link-menu{
+.theme-dark .home-link{
     color: var(--White);
 }
 .theme-dark .shopping-list-text{
