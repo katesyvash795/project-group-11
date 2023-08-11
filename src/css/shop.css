@@ -357,6 +357,7 @@ button {
         padding: 0 24px;
         width: 1392px;
         justify-content: center;
+        align-items: flex-start;
     }
 
     .shopping-list-item {
