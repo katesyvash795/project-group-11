@@ -138,12 +138,13 @@ button {
     justify-content: center;
 }
 
-/* .cart{
-        flex-direction: column;
-        gap: 14px;
-        align-items: center;
-        justify-content: center;
-    } */
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    margin: 0 auto;
+}
 .home-link-menu,
 .home-link {
     background: none;
