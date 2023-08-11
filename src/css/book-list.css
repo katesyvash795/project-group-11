@@ -9,6 +9,20 @@
 
 .book-list-container::-webkit-scrollbar {
     width: 0.5em;
+    height: 104px;
+
+    /* Ширина полоси прокрутки */
+}
+
+.book-list-container::-webkit-scrollbar-thumb {
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    /* Колір полоси прокрутки */
+}
+
+.book-list-container::-webkit-scrollbar-track {
+    background-color: inherit;
+    /* Колір тла */
 }
 
 
