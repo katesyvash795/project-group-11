@@ -22,7 +22,7 @@ function renderBookCard(book) {
       return `
         <li class="best-book-item" data-id="${book._id}">
         <div class="category-img-container">
-          <img class="best-book-item-img" src="${book.book_image}"/>
+          <img class="best-book-item-img" src="${book.book_image}" alt="${book.title}"/>
           <p class="category-item-img-text-card">
                     quick view 
                   </p>
