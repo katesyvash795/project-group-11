@@ -2,6 +2,7 @@
     width: 307px;
     height: 228px;
     overflow: scroll;
+    overflow-x: hidden;
     /* gap: 32px; */
 
 }
