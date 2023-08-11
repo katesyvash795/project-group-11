@@ -33,12 +33,9 @@ function createMarkup(arr) {
 }
 
 function createBookLinks(buy_links) {
-    return `<a href="${buy_links[0].url}"> <img srcset="./images/book-store-icon/amazon-2x.png"
-                    src="./images/book-store-icon/amazon.png" alt="Link Icon" class="link-icon amazon" width="32" height="11"></a>
-    <a href="${buy_links[1].url}"> <img srcset="./images/book-store-icon/apple-books-2x.png"
-                    src="./images/book-store-icon/apple-books.png" alt="Link Icon" class="link-icon apple-book" width="16" height="16"></a>
-    <a href="${buy_links[2].url}"> <img srcset="./images/book-store-icon/book-shop-2x.png"
-                    src="./images/book-store-icon/book-shop.png" alt="Link Icon" class="link-icon book-shop" width="16" height="16"></a>`
+    return `<a href="${buy_links[0].url}"> <img src="/project-group-11/amazon.a7ec3af8.png" alt="Link Icon" class="link-icon amazon" width="32" height="11"></a>
+    <a href="${buy_links[1].url}"> <img src="/project-group-11/apple-books.a9f158e0.png" alt="Link Icon" class="link-icon apple-book" width="16" height="16"></a>
+    <a href="${buy_links[2].url}"> <img src="/project-group-11/book-shop.eb5fbc1e.png" alt="Link Icon" class="link-icon book-shop" width="16" height="16"></a>`
    
 }
 console.log(createMarkup(products));
